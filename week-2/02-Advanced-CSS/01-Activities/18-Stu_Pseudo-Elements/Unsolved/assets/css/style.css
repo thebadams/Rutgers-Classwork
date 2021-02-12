@@ -60,8 +60,18 @@ article p {
 }
 
 /* TODO: Style the keyword - underline, black text, grab cursor */
+#css {
+  text-decoration: underline;
+  color: black;
+  cursor: grab;
+}
 
 /* TODO: Position tooltip above the keyword, same color as header and nav links, no border-radius, smaller font size */
+
+#css:hover {
+  color:#b9c6ae;
+  font-size: 75%;
+}
 
 aside {
   width: 25%;
