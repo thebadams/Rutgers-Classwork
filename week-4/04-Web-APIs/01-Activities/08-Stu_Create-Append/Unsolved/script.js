@@ -37,10 +37,11 @@ favoriteEl.setAttribute("style", "font-size:20px;");
 
 // TODO: Add ordered list items containing four favorite foods
 
-listEl.appendChild(li1).textContent = "Fish";
-listEl.appendChild(li2).textContent = "Fish";
-listEl.appendChild(li3).textContent = "Fish"; 
-listEl.appendChild(li4).textContent = "Fish";
+let favoriteFoods = ["Fish", "Bird", "Mouse", "Fruits"];
+listEl.appendChild(li1).textContent = favoriteFoods[0];
+listEl.appendChild(li2).textContent = favoriteFoods[1];
+listEl.appendChild(li3).textContent = favoriteFoods[2];
+listEl.appendChild(li4).textContent = favoriteFoods[3];
 
 var lis = document.querySelectorAll("li");
 
