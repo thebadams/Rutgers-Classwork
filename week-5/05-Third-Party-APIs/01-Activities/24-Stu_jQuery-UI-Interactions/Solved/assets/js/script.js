@@ -70,5 +70,7 @@ $(function () {
   $('#skills-list').sortable({
     placeholder: 'ui-state-highlight',
   });
+
+  console.log($('#skills-list').sortable)
   $('#skills-list').disableSelection();
 });
