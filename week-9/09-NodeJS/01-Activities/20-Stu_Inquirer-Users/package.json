@@ -1,0 +1,14 @@
+{
+  "name": "inquirer-users",
+  "version": "1.0.0",
+  "description": "a simple cli interface to ask a user some information",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "thebadams",
+  "license": "ISC",
+  "dependencies": {
+    "inquirer": "^8.0.0"
+  }
+}

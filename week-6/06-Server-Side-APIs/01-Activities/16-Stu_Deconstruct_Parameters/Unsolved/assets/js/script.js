@@ -9,3 +9,8 @@ fetch(
     console.log(data);
   });
 // Parameter explanation.
+//per_page= 10 gets 10 results
+//gets state of open issues
+// sorts by when it was created
+//displays in descending
+//
