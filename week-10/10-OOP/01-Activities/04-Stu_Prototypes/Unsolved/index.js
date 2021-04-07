@@ -1,4 +1,5 @@
 // TODO: Add a comment describing what kind of function this is
+//constructor function function that constructs an object
 function Character(name, type, age, strength, hitpoints) {
   this.name = name;
   this.type = type;
@@ -56,3 +57,7 @@ rogue.levelUp();
 
 // TODO: Add a comment describing what you expect to see printed in the console
 rogue.printStats();
+
+warrior.attack(warrior)
+console.log(warrior.hitpoints)
+
