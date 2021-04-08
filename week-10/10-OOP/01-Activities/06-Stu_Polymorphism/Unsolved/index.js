@@ -60,3 +60,4 @@ function Student(first, last, age) {
 const John = new Student('John', 'Appleseed', '30');
 console.log('John.displayGrade():', John.displayGrade(95));
 console.log('John.displayGrade():', John.displayGrade('B'));
+console.log(John.displayGrade("F"))
