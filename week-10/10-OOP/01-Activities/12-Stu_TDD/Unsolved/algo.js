@@ -1,4 +1,6 @@
-function Algo() {}
+function Algo(str) {
+    this.string = string
+}
 
 Algo.prototype.reverse = function(str) {};
 

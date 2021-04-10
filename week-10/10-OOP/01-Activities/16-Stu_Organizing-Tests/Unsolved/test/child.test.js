@@ -7,15 +7,19 @@ describe("Child", () => {
       const child = new Child("Sarah", 3);
 
       // TODO: Add a comment describing the purpose of the following statements
+      // asserts that child.name should equal "Sarah"
       expect(child.name).toEqual("Sarah");
+      //asserts that child.age should equal 3
       expect(child.age).toEqual(3);
     });
 
     it("should throw an error if provided no arguments", () => {
       // TODO: Add a comment describing the purpose of the following expression
+      //defines cb as a function that creates a new Child with no parameters
       const cb = () => new Child();
 
       // TODO: Add a comment describing the purpose of the following statement
+      //asserting that cb should throw an error but not return anything
       expect(cb).toThrow();
     });
 
@@ -23,9 +27,11 @@ describe("Child", () => {
       const cb = () => new Child("Sarah");
 
       // TODO: Add a comment describing the purpose of the following declaration
+      // defining the error to throw 
       const err = new Error("Expected parameter 'age' to be a non-negative number");
 
       // TODO: Add a comment describing the purpose of the following statement
+      // assertst that in this case, throw an error
       expect(cb).toThrowError(err);
     });
 
