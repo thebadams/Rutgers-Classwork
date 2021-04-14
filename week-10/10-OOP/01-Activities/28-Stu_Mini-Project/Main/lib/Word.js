@@ -42,4 +42,9 @@ class Word {
   }
 }
 
+const word = new Word("hello")
+console.log(word)
+console.log(word.toString())
+console.log(word.letters[0].toString())
+
 module.exports = Word;

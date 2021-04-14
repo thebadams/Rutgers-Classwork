@@ -14,8 +14,10 @@ var isAnagram = function(strA, strB) {
     var aLetter = strA[i];
     var bLetter = strB[i];
 
-    aLetterMap[aLetter] = (aLetterMap[aLetter] || 0) + 1;
+    aLetterMap[aLetter] = 0 || (aLetterMap[aLetter]+1);
     bLetterMap[bLetter] = (bLetterMap[bLetter] || 0) + 1;
+    console.log("A Letter Map:", aLetterMap)
+    console.log("B Letter Map:", bLetterMap)
   }
 
   for (var key in aLetterMap) {
