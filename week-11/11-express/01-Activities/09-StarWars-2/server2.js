@@ -40,7 +40,7 @@ app.get('/:character', (req, res) => {
   // What does this log?
   console.log(chosen);
 
-  res.end();
+  res.end(chosen);
 });
 
 // Listener
