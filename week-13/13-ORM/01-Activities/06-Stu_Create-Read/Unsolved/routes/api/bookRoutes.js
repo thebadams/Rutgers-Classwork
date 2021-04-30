@@ -2,24 +2,30 @@ const router = require('express').Router();
 const Book = require('../../models/Book');
 
 // TODO: Add a comment describing the purpose of this route
+// Defines /api/ as a get request
 router.get('/', (req, res) => {
   // TODO: Add a comment describing the functionality of this method
   Book.findAll().then((bookData) => {
+    //SELECT * FROM book
     res.json(bookData);
   });
 });
 
 // TODO: Add a comment describing the purpose of this route
+//defining /api/paperbacks as a get request endpoint
 router.get('/paperbacks', (req, res) => {
   Book.findAll({
     // TODO: Add a comment describing the functionality of this property
+    //ORDER BY title
     order: ['title'],
     // TODO: Add a comment describing the functionality of this property
+    //WHERE is_paperback is true
     where: {
       is_paperback: true
     },
     attributes: {
       // TODO: Add a comment describing the functionality of this property
+      //excludes is paperback and edition from the data
       exclude: ['is_paperback', 'edition']
     }
   }).then((bookData) => {
@@ -28,8 +34,10 @@ router.get('/paperbacks', (req, res) => {
 });
 
 // TODO: Add a comment describing the purpose of this route
+//defines the endpoint /api/:id as a get request
 router.get('/:id', (req, res) => {
   // TODO: Add a comment describing the functionality of this method
+  //find a book by primary key and req.params.id carries the id num
   Book.findByPk(req.params.id).then((bookData) => {
     res.json(bookData);
   });

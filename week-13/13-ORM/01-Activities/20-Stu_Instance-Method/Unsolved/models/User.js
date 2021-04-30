@@ -3,7 +3,8 @@ const bcrypt = require('bcrypt');
 const sequelize = require('../config/connection');
 
 class User extends Model {
-  checkPassword(userPassword) {
+ checkPassword(userPassword) {
+   return bcrypt.compare(userPassword, this.password);
     // TODO: Complete the instance method
   }
 }

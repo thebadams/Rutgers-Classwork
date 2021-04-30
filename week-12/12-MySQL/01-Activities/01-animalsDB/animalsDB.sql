@@ -35,3 +35,5 @@ VALUES ("Peter", false);
 UPDATE people
 SET has_pet = true, pet_name = "Franklin", pet_age = 2
 WHERE name = "Peter";
+
+
